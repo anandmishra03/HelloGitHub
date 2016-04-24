@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    tools:context="medico.com.patientmedico.PatientMedico">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black_overlay"
+            >
+
+
+            <!-- <Button
+                 android:id="@+id/dummy_button"
+                 style="?metaButtonBarButtonStyle"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="@string/dummy_button" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Search"
+                android:id="@+id/searchLabel"
+                android:layout_gravity="left|top" />
+
+            <AutoCompleteTextView
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:textColor="#FFFFFF">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourHistory"
+                    android:textAlignment="center"
+                    android:background="#736F6E"
+                    android:id="@+id/medHistoryLabel" />
+
+            </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <GridView
+            android:id="@+id/gridviewDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <GridView
+            android:id="@+id/DoctorCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="373dp"
+             android:orientation="horizontal">
+        <GridView
+            android:id="@+id/gridviewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center"
+            />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/actionItem"
+            android:textAlignment="center"
+            android:background="#736F6E"
+            android:id="@+id/actionItemLabel"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="#736F6E"
+            android:id="@+id/actionItemValue"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+
+       </LinearLayout>

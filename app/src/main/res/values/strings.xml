@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PatientMedico</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="yourHistory">YOUR HISTORY</string>
+    <string name="actionItem">ACTION ITEM</string>
+</resources>
